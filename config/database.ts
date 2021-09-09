@@ -53,9 +53,3 @@ const databaseConfig: DatabaseConfig = {
 }
 
 export default databaseConfig
-
-declare module '@ioc:Adonis/Lucid/Orm' {
-  interface ModelQueryBuilderContract<Model extends LucidModel, Result = InstanceType<Model>> {
-    whereSlug(column:string, value:string): this; //error
-  }
-}
